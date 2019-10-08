@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meat name="keywords" content="HTML,CSS,JavaScript">
         <meta charset="UTF-8" >
-        <meta http-equiv="refresh" content="20">
             <title>
                 码蜂社前端例子
             </title>
     </head>
+    <body>
+        <form action="null">
+            <div>
+                用户名：<input type="text" name="username"/>
+            </div>
+            <div>
+                密码：<input type="password" name="password"/>
+            </div>
+            <div>
+                性别：<input type="radio" name="sex" value="man"/>男<input type="radio" name="sex" value="woman"/>女
+            </div>
+            <div>
+                技能：<input type="checkbox" name="skill" value="1"/>HTML<input type="checkbox" name="skill" value="2"/>CSS<input type="checkbox" name="skill" value="3"/>JavaScript
+            </div>
+            <div>
+                所在城市：<select name="city">
+                    <option value="1">北京 </option>
+                    <option value="2">上海 </option>
+                    <option value="3">深圳 </option>
+                </select>
+            </div>
+            <div>
+                <button type="submit">提交</button>
+                <button type="reset">重置</button>
+            </div>
+        </form>
+    </body>
 </html>

@@ -5,29 +5,32 @@
             <title>
                 码蜂社前端例子
             </title>
+            <style>
+                body{
+                  margin: 0
+                }
+                *{
+                  box-sizing: border-box
+                }
+                .left {
+                  float: left;
+                  width: 100px;
+                }
+                .left a{
+                  display: block
+                }
+                .right {
+                  float: left;
+                  width: calc(100% - 102px);
+                  height: 100vh
+                }
+              </style>
     </head>
     <body>
-        <form action="null" mathod="post">
-            <div>
-                邮箱：<input type="email" name="email"/>
-            </div>
-            <div>
-                数字：<input type="number" name="number" min="0" max="100" step="2"/>
-            </div>
-            <div>
-                城市：<input list="City">
-                <datalist id="City">
-                    <option value="北京">
-                    <option value="上海">
-                    <option value="广州">
-                    <option value="深圳">
-                </datalist>
-
-            </div>
-            <div>
-                <button type="submit">提交</button>
-                <button type="reset">重置</button>
-            </div>
-        </form>
+        <div class="left">
+            <a href="https://www.baidu.com" target="ifram1">百度</a>
+            <a href="https://lol.qq.com/act/a20190920worlds/index.shtml?e_code=491407&idataid=278057" target="ifram1">LOL</a>
+        </div>
+        <iframe class="right" name="ifram1" src="https://www.baidu.com"  frameborder="0"></iframe>
     </body>
 </html>
